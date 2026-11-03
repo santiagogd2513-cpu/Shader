@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Main (play/create) button: cyan to blue gradient -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/_6sdp" />
+            <gradient
+                android:angle="0"
+                android:startColor="@color/blue_cyan"
+                android:centerColor="@color/blue_sky"
+                android:endColor="@color/blue_normal" />
+            <stroke android:width="@dimen/_1sdp" android:color="@color/blue_light" />
+        </shape>
+    </item>
+</layer-list>

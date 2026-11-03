@@ -79,21 +79,7 @@
             app:layout_constraintTop_toBottomOf="@+id/title_modded_textview"
             />
 
-        <com.kdt.mcgui.MineButton
-            android:id="@+id/modded_profile_fabric"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/padding_large"
-            android:layout_marginTop="@dimen/padding_large"
-            android:text="@string/modloader_dl_install_fabric" />
 
-        <com.kdt.mcgui.MineButton
-            android:id="@+id/modded_profile_quilt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/padding_large"
-            android:layout_marginTop="@dimen/padding_large"
-            android:text="@string/modloader_dl_install_quilt" />
 
         <com.kdt.mcgui.MineButton
             android:id="@+id/modded_profile_forge"
@@ -103,21 +89,7 @@
             android:layout_marginTop="@dimen/padding_large"
             android:text="@string/modloader_dl_install_forge" />
 
-        <com.kdt.mcgui.MineButton
-            android:id="@+id/modded_profile_modpack"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/padding_large"
-            android:layout_marginTop="@dimen/padding_large"
-            android:text="@string/modpack_install_button" />
 
-        <com.kdt.mcgui.MineButton
-            android:id="@+id/modded_profile_bta"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/padding_large"
-            android:layout_marginTop="@dimen/padding_large"
-            android:text="@string/create_bta_profile" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline"
