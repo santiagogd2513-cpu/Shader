@@ -1,26 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Blue palette: from light cyan to the darkest navy -->
+    <!-- Blue palette: ice, cyan, sky, azure, royal, indigo, navy... -->
+    <color name="blue_ice">#B3E5FC</color>
     <color name="blue_cyan">#00E5FF</color>
+    <color name="blue_teal">#00B8D4</color>
     <color name="blue_light">#4FC3F7</color>
     <color name="blue_sky">#29B6F6</color>
+    <color name="blue_azure">#2979FF</color>
     <color name="blue_normal">#1E88E5</color>
+    <color name="blue_steel">#1C5FA8</color>
     <color name="blue_dark">#1565C0</color>
+    <color name="blue_indigo">#304FFE</color>
     <color name="blue_darker">#0D47A1</color>
+    <color name="blue_royal">#0B3D91</color>
+    <color name="blue_midnight">#1A237E</color>
     <color name="blue_deep">#0A2E5C</color>
     <color name="blue_night">#071A33</color>
-    <color name="blue_abyss">#050F1F</color>
+    <color name="blue_abyss">#040B18</color>
 
     <color name="control_button_color">#4C4FC3F7</color>
-    <color name="control_button_pressed_color">#4D0D47A1</color>
+    <color name="control_button_pressed_color">#4D304FFE</color>
 
     <color name="minebutton_color">@color/blue_sky</color>
-    <color name="background_app">@color/blue_abyss</color>
-    <color name="divider">#1E4B80</color>
-    <color name="background_overlay">#10305A</color>
-    <color name="background_status_bar">@color/blue_night</color>
-    <color name="background_bottom_bar">#0A2140</color>
+    <color name="background_app">#06142B</color>
+    <color name="divider">#2D7FD3</color>
+    <color name="background_overlay">#163D7A</color>
+    <color name="background_status_bar">@color/blue_royal</color>
+    <color name="background_bottom_bar">#0F2D6B</color>
 
     <color name="primary_text">#FFFFFF</color>
-    <color name="secondary_text">#9EC9EE</color>
+    <color name="secondary_text">#9CC8F5</color>
 </resources>

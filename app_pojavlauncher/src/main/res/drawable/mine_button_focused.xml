@@ -6,9 +6,9 @@
             <corners android:radius="@dimen/_6sdp" />
             <gradient
                 android:angle="0"
-                android:startColor="@color/blue_dark"
-                android:centerColor="@color/blue_darker"
-                android:endColor="@color/blue_deep" />
+                android:startColor="@color/blue_steel"
+                android:centerColor="@color/blue_royal"
+                android:endColor="@color/blue_midnight" />
             <stroke android:width="@dimen/_1sdp" android:color="@color/blue_normal" />
         </shape>
     </item>

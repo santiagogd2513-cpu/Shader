@@ -7,9 +7,9 @@
             <gradient
                 android:angle="0"
                 android:startColor="@color/blue_cyan"
-                android:centerColor="@color/blue_sky"
-                android:endColor="@color/blue_normal" />
-            <stroke android:width="@dimen/_1sdp" android:color="@color/blue_light" />
+                android:centerColor="@color/blue_azure"
+                android:endColor="@color/blue_indigo" />
+            <stroke android:width="@dimen/_1sdp" android:color="@color/blue_ice" />
         </shape>
     </item>
 </layer-list>

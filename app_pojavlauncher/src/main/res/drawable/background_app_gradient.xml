@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Screen background: royal blue at the top fading into deep navy -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:angle="270"
+        android:startColor="#0B2F66"
+        android:centerColor="#071A3D"
+        android:endColor="@color/blue_abyss" />
+</shape>
