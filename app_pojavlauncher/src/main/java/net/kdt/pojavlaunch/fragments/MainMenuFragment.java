@@ -103,7 +103,8 @@ public class MainMenuFragment extends Fragment {
     private void runInstallerWithConfirmation(boolean isCustomArgs) {
         // avoid using custom installers to install a version
         if(Tools.isLocalProfile(requireContext()) || Tools.isDemoProfile(requireContext())){
-            Toast.makeText(requireContext(), R.string.toast_not_available_demo, Toast.LENGTH_LONG).show();
+            Toast.makeText(requireContext(), Tools.isDemoProfile(requireContext())
+                    ? R.string.toast_not_available_demo : R.string.toast_needs_microsoft_account, Toast.LENGTH_LONG).show();
             return;
         }
 

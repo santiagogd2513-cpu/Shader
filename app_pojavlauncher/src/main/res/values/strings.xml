@@ -492,4 +492,5 @@
         <item>OptiFine</item>
         <item>Iris / Oculus</item>
     </string-array>
+    <string name="toast_needs_microsoft_account">Installing Forge, OptiFine or modpacks downloads Minecraft, which needs a Microsoft account that owns the game. Add your Microsoft account, install, and then you can play with your local account.</string>
 </resources>

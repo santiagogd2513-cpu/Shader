@@ -423,7 +423,8 @@ public class ContentBrowserFragment extends Fragment implements ContentAdapter.L
         if(project.type == ContentType.MODPACK) {
             // Same rule as the original launcher: installing a modpack also installs Minecraft + Forge
             if(Tools.isLocalProfile(context) || Tools.isDemoProfile(context)) {
-                Toast.makeText(context, R.string.toast_not_available_demo, Toast.LENGTH_LONG).show();
+                Toast.makeText(context, Tools.isDemoProfile(context)
+                        ? R.string.toast_not_available_demo : R.string.toast_needs_microsoft_account, Toast.LENGTH_LONG).show();
                 return;
             }
         } else if(getTargetProfile() == null) {
