@@ -5,6 +5,9 @@ on:
   pull_request:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-22.04
@@ -127,3 +130,17 @@ jobs:
         with:
           name: ShaderLauncher-debug
           path: out/ShaderLauncher-debug.*
+
+      - name: Publish GitHub Release
+        if: github.event_name != 'pull_request'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: shader-launcher-${{ github.run_number }}
+          name: Shader Launcher (build ${{ github.run_number }})
+          target_commitish: ${{ github.sha }}
+          make_latest: true
+          files: out/ShaderLauncher-debug.apk
+          body: |
+            APK de Shader Launcher (basado en PojavLauncher).
+            Descarga **ShaderLauncher-debug.apk** e instálalo en Android.
+            Se instala aparte de PojavLauncher.
