@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_app"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/fragment_padding_medium"
+    android:paddingTop="@dimen/padding_medium">
+
+    <!-- Content type tabs -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/content_tab_mods"
+            style="@style/ContentTab"
+            android:text="@string/content_tab_mods" />
+
+        <TextView
+            android:id="@+id/content_tab_shaders"
+            style="@style/ContentTab"
+            android:text="@string/content_tab_shaders" />
+
+        <TextView
+            android:id="@+id/content_tab_modpacks"
+            style="@style/ContentTab"
+            android:text="@string/content_tab_modpacks" />
+
+        <TextView
+            android:id="@+id/content_tab_resourcepacks"
+            style="@style/ContentTab"
+            android:text="@string/content_tab_resourcepacks" />
+    </LinearLayout>
+
+    <!-- Search bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_medium"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/content_search_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/background_line"
+            android:hint="@string/content_search_hint"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingHorizontal="@dimen/padding_heavy"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/secondary_text"
+            android:textSize="@dimen/_13ssp" />
+
+        <ImageButton
+            android:id="@+id/content_search_button"
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/content_search_hint"
+            android:src="@android:drawable/ic_menu_search" />
+
+        <ImageButton
+            android:id="@+id/content_filter_button"
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/content_filters_title"
+            android:src="@drawable/ic_filter" />
+    </LinearLayout>
+
+    <!-- Target profile + active filters -->
+    <TextView
+        android:id="@+id/content_target_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_medium"
+        android:background="@drawable/content_tab_background"
+        android:drawableEnd="@drawable/spinner_arrow"
+        android:drawablePadding="@dimen/padding_medium"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:paddingHorizontal="@dimen/padding_heavy"
+        android:paddingVertical="@dimen/padding_medium"
+        android:textColor="@color/primary_text" />
+
+    <TextView
+        android:id="@+id/content_filters_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_small"
+        android:textColor="@color/blue_light"
+        android:textSize="@dimen/_10ssp" />
+
+    <ProgressBar
+        android:id="@+id/content_progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/content_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/padding_large" />
+
+        <TextView
+            android:id="@+id/content_status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/padding_large"
+            android:textColor="@color/secondary_text"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

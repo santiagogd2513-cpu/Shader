@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_heavy">
+
+        <TextView
+            style="@style/ContentFilterLabel"
+            android:text="@string/content_filter_mc_version" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/content_filter_version_edittext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/content_filter_any"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/primary_text"
+                android:textColorHint="@color/secondary_text" />
+
+            <Button
+                android:id="@+id/content_filter_version_pick"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/content_filter_pick"
+                android:textColor="@color/blue_cyan" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/content_filter_loader_label"
+            style="@style/ContentFilterLabel"
+            android:text="@string/content_filter_loader" />
+
+        <TextView
+            android:id="@+id/content_filter_loader_fixed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/content_filter_loader_forge_only"
+            android:textColor="@color/blue_light" />
+
+        <Spinner
+            android:id="@+id/content_filter_shader_loader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/ContentFilterLabel"
+            android:text="@string/content_filter_category" />
+
+        <Spinner
+            android:id="@+id/content_filter_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/ContentFilterLabel"
+            android:text="@string/content_filter_sort" />
+
+        <Spinner
+            android:id="@+id/content_filter_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

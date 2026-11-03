@@ -29,6 +29,27 @@
         <item name="android:windowBackground">@drawable/dialog_background</item>
     </style>
 
+    <style name="ContentTab">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/_34sdp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginHorizontal">@dimen/_2sdp</item>
+        <item name="android:background">@drawable/content_tab_background</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ContentFilterLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/padding_large</item>
+        <item name="android:textColor">@color/blue_sky</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
     <style name="LauncherFragment_Divider">
         <item name="android:layout_width">@dimen/padding_tiny</item>
         <item name="android:layout_height">0dp</item>

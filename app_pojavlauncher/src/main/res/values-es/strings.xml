@@ -361,4 +361,65 @@
     <string name="local_login_bad_username_title">Nombre de usuario inadecuado</string>
     <string name="local_login_bad_username_text">El nombre de usuario debe de ser entre 3 a 16 caracteres, y solo contener letras latinas, números de 0 a 9 y guiones bajos.</string>
     <string name="quick_setting_title">Configuraciones rápidas</string>
+
+    <!-- Shader Launcher: carpeta en el almacenamiento principal -->
+    <string name="storage_all_files_title">Carpeta del launcher</string>
+    <string name="storage_all_files_message">Para crear la carpeta \"%s\" en tu almacenamiento principal (junto a Download, DCIM, Música…) el launcher necesita \"Permitir acceso para administrar todos los archivos\". Si no lo permites, los archivos del juego se guardan en la carpeta privada de la app.</string>
+    <string name="storage_all_files_allow">Permitir</string>
+    <string name="storage_all_files_not_now">Ahora no</string>
+    <string name="storage_all_files_never">No volver a preguntar</string>
+    <string name="storage_all_files_denied">Sin acceso al almacenamiento: se usa la carpeta privada de la app</string>
+
+    <!-- Shader Launcher: navegador de contenido -->
+    <string name="main_content_browser">Mods, shaders y más</string>
+    <string name="content_tab_mods">Mods</string>
+    <string name="content_tab_shaders">Shaders</string>
+    <string name="content_tab_modpacks">Modpacks</string>
+    <string name="content_tab_resourcepacks">Resource packs</string>
+    <string name="content_search_hint">Buscar…</string>
+    <string name="content_filters_title">Filtros</string>
+    <string name="content_filter_mc_version">Versión de Minecraft</string>
+    <string name="content_filter_any">Cualquiera</string>
+    <string name="content_filter_any_version">Cualquier versión</string>
+    <string name="content_filter_pick">Elegir</string>
+    <string name="content_filter_loader">Cargador</string>
+    <string name="content_filter_loader_forge_only">Forge (solo se muestra contenido de Forge)</string>
+    <string name="content_filter_category">Categoría</string>
+    <string name="content_filter_sort">Ordenar por</string>
+    <string name="content_filters_apply">Aplicar</string>
+    <string name="content_filters_reset">Restablecer</string>
+    <string name="content_download">Descargar</string>
+    <string name="content_item_meta">de %1$s · %2$s descargas</string>
+    <string name="content_search_error">No se pudo conectar con Modrinth: %s</string>
+    <string name="content_search_error_short">No se pudieron cargar más resultados</string>
+    <string name="content_no_results">No hay resultados con estos filtros</string>
+    <string name="content_no_profile">Primero crea un perfil</string>
+    <string name="content_install_into">Instalar en: %s</string>
+    <string name="content_pick_profile">¿En qué perfil instalar?</string>
+    <string name="content_not_forge_title">Este perfil no tiene Forge</string>
+    <string name="content_not_forge_message">Los mods solo cargan en un perfil de Forge. Crea un perfil de Forge o elígelo como destino antes de descargar mods.</string>
+    <string name="content_continue_anyway">Descargar igualmente</string>
+    <string name="content_error_title">Error de descarga</string>
+    <string name="content_no_versions_title">Ninguna versión compatible</string>
+    <string name="content_no_versions_message">%1$s no tiene versión para Minecraft %2$s (%3$s).</string>
+    <string name="content_pick_version">%s: elige una versión</string>
+    <string name="content_downloading">Descargando %s…</string>
+    <string name="content_download_progress">%1$s (%2$.2f MB / %3$.2f MB)</string>
+    <string name="content_installed_title">%s instalado</string>
+    <string name="content_installed_into">Carpeta: %s</string>
+    <string name="content_installed_files">Descargado:</string>
+    <string name="content_already_installed">Ya estaba instalado:</string>
+    <string name="content_missing_dependencies">Dependencias obligatorias que no se encontraron para esta versión (instálalas a mano):</string>
+    <string-array name="content_sort_names">
+        <item>Relevancia</item>
+        <item>Descargas</item>
+        <item>Seguidores</item>
+        <item>Más nuevos</item>
+        <item>Actualizados recientemente</item>
+    </string-array>
+    <string-array name="content_shader_loader_names">
+        <item>Cualquiera</item>
+        <item>OptiFine</item>
+        <item>Iris / Oculus</item>
+    </string-array>
 </resources>

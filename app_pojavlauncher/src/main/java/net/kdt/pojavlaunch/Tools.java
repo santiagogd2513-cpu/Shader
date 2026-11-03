@@ -101,7 +101,7 @@ import java.util.Map;
 public final class Tools {
     public  static final float BYTE_TO_MB = 1024 * 1024;
     public static final Handler MAIN_HANDLER = new Handler(Looper.getMainLooper());
-    public static String APP_NAME = "PojavLauncher";
+    public static String APP_NAME = "ShaderLauncher";
 
     public static final Gson GLOBAL_GSON = new GsonBuilder().setPrettyPrinting().create();
 
@@ -136,12 +136,36 @@ public final class Tools {
     private static RenderersList sCompatibleRenderers;
 
 
-    private static File getPojavStorageRoot(Context ctx) {
-        if(SDK_INT >= 29) {
-            return ctx.getExternalFilesDir(null);
-        }else{
-            return new File(Environment.getExternalStorageDirectory(),"games/PojavLauncher");
+    /** Name of the launcher folder created in the main storage (next to Download, DCIM, Music...) */
+    public static final String PUBLIC_FOLDER_NAME = "ShaderLauncher";
+
+    /**
+     * @return true if the app is allowed to read/write the main shared storage
+     * (All files access on Android 11+, classic storage permissions before)
+     */
+    public static boolean hasPublicStorageAccess(Context ctx) {
+        if(SDK_INT >= 30) return Environment.isExternalStorageManager();
+        if(SDK_INT >= 23) {
+            return ctx.checkSelfPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED
+                    && ctx.checkSelfPermission(android.Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED;
         }
+        return true;
+    }
+
+    /** @return the launcher folder in the main storage, e.g. /storage/emulated/0/ShaderLauncher */
+    public static File getPublicStorageFolder() {
+        return new File(Environment.getExternalStorageDirectory(), PUBLIC_FOLDER_NAME);
+    }
+
+    private static File getPojavStorageRoot(Context ctx) {
+        if(hasPublicStorageAccess(ctx)) {
+            File publicFolder = getPublicStorageFolder();
+            if((publicFolder.isDirectory() || publicFolder.mkdirs()) && publicFolder.canWrite()) {
+                return publicFolder;
+            }
+        }
+        // Fallback: app-specific folder (Android/data/<package>/files), always writable
+        return ctx.getExternalFilesDir(null);
     }
 
     /**

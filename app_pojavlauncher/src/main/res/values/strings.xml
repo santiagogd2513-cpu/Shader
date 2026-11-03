@@ -431,4 +431,65 @@
     <string name="bta_installer_nightly_versions">Nightly BTA versions</string>
     <string name="newdl_extracting_native_libraries">Extracting native libraries (%d/%d)</string>
     <string name="toast_not_available_demo">This is not available in demo mode</string>
+
+    <!-- Shader Launcher: main storage folder -->
+    <string name="storage_all_files_title">Launcher folder</string>
+    <string name="storage_all_files_message">To create the \"%s\" folder in your main storage (next to Download, DCIM, Music…) the launcher needs \"Allow access to all files\". Without it, the game files stay in the app private folder.</string>
+    <string name="storage_all_files_allow">Allow</string>
+    <string name="storage_all_files_not_now">Not now</string>
+    <string name="storage_all_files_never">Don\'t ask again</string>
+    <string name="storage_all_files_denied">No storage access: using the app private folder</string>
+
+    <!-- Shader Launcher: content browser -->
+    <string name="main_content_browser">Mods, shaders &amp; more</string>
+    <string name="content_tab_mods">Mods</string>
+    <string name="content_tab_shaders">Shaders</string>
+    <string name="content_tab_modpacks">Modpacks</string>
+    <string name="content_tab_resourcepacks">Resource packs</string>
+    <string name="content_search_hint">Search…</string>
+    <string name="content_filters_title">Filters</string>
+    <string name="content_filter_mc_version">Minecraft version</string>
+    <string name="content_filter_any">Any</string>
+    <string name="content_filter_any_version">Any version</string>
+    <string name="content_filter_pick">Choose</string>
+    <string name="content_filter_loader">Loader</string>
+    <string name="content_filter_loader_forge_only">Forge (only Forge content is shown)</string>
+    <string name="content_filter_category">Category</string>
+    <string name="content_filter_sort">Sort by</string>
+    <string name="content_filters_apply">Apply</string>
+    <string name="content_filters_reset">Reset</string>
+    <string name="content_download">Download</string>
+    <string name="content_item_meta">by %1$s · %2$s downloads</string>
+    <string name="content_search_error">Could not reach Modrinth: %s</string>
+    <string name="content_search_error_short">Could not load more results</string>
+    <string name="content_no_results">No results with these filters</string>
+    <string name="content_no_profile">Create a profile first</string>
+    <string name="content_install_into">Install into: %s</string>
+    <string name="content_pick_profile">Install into which profile?</string>
+    <string name="content_not_forge_title">This profile has no Forge</string>
+    <string name="content_not_forge_message">Mods only load in a Forge profile. Create a Forge profile, or pick it as target, before downloading mods.</string>
+    <string name="content_continue_anyway">Download anyway</string>
+    <string name="content_error_title">Download error</string>
+    <string name="content_no_versions_title">No compatible version</string>
+    <string name="content_no_versions_message">%1$s has no version for Minecraft %2$s (%3$s).</string>
+    <string name="content_pick_version">%s: choose a version</string>
+    <string name="content_downloading">Downloading %s…</string>
+    <string name="content_download_progress">%1$s (%2$.2f MB / %3$.2f MB)</string>
+    <string name="content_installed_title">%s installed</string>
+    <string name="content_installed_into">Folder: %s</string>
+    <string name="content_installed_files">Downloaded:</string>
+    <string name="content_already_installed">Already installed:</string>
+    <string name="content_missing_dependencies">Required dependencies not found for this version (install them manually):</string>
+    <string-array name="content_sort_names">
+        <item>Relevance</item>
+        <item>Downloads</item>
+        <item>Followers</item>
+        <item>Newest</item>
+        <item>Recently updated</item>
+    </string-array>
+    <string-array name="content_shader_loader_names">
+        <item>Any</item>
+        <item>OptiFine</item>
+        <item>Iris / Oculus</item>
+    </string-array>
 </resources>
